@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <button type="button" id="admin" class="admin">Admin</button>
+    <button type="button" id="client">Client</button>
+  </header>
+  <main>
+    <div class="admin-wrapper">
+      <button type="button" class="add">add product</button>
+      <div id="add-form">
+        <form action="#">
+          <div>
+            <label for="code">code:</label>
+            <input type="number" id="code" class="code" placeholder="enter product code">
+          </div>
+          <div>
+            <label for="name">name:</label>
+            <input type="text" id="name" class="name" placeholder="enter product name">
+          </div>
+          <div>
+            <label for="price">price:</label>
+            <input type="number" id="price" class="price" placeholder="enter product price">
+          </div>
+          <div>
+            <label for="checkbox" class="lable">available:</label>
+            <input type="checkbox" id="checkbox" class="checkbox">
+          </div>
+          <div>
+            <label for="url">image:</label>
+            <input type="url" id="url" placeholder="enter image url">
+          </div>
+          <div>
+            <label for="description">description:</label>
+            <textarea id="description" placeholder="Enter description"></textarea>
+          </div>
+          <div class="button-container">
+            <button type="reset" name="button">Reset</button>
+            <button type="submit" name="button" class="save">Save</button>
+          </div>
+        </form>
+      </div>
+      <table class="table">
+      </table>
+    </div>
+    <div class="client-wrapper">
+      <div class="basket">
+        <div class="box">
+          <img src="img/shopping-cart.svg" alt="basket" class="basket-img">
+          <p>Purchase amount: <span class="sum">0</span></p>
+        </div>
+        <div class="basket-body">
+        </div>
+      </div>
+      <div class="goods">
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

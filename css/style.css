@@ -1,0 +1,213 @@
+.client-wrapper {
+  display: none;
+  background-color: #f9f9cf;
+  position: relative;
+  padding-top: 70px;
+}
+body {
+  margin: 0;
+}
+#add-form {
+  display: none;
+  text-align: center;
+}
+
+.basket-body {
+  display: none;
+}
+
+.basket {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px;
+  background-color: #37f41a;
+  color: #fff;
+  z-index: 10;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+.basket-img {
+  width: 30px;
+  height: 30px;
+}
+.box {
+  display: flex;
+}
+.box>p {
+  margin: 0;
+  padding-left: 5px;
+  font-weight: 800;
+}
+header {
+  width: 100vw;
+  position: relative;
+  height: 100px;
+  background: linear-gradient(to bottom, #c9cc00, #f8f99d);
+}
+
+#admin {
+  position: absolute;
+  top: 20px;
+  left: 10vw;
+}
+#admin:hover, #client:hover{
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+
+#client {
+  position: absolute;
+  top: 20px;
+  right: 10vw;
+}
+#admin, #client {
+  color: #777674;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+  user-select: none;
+  padding: 1em 2em;
+  outline: none;
+  border-radius: 3px / 100%;
+  background-image:
+   linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+   linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+
+.admin-wrapper {
+  position: relative;
+  padding: 60px 20px;
+}
+
+.add {
+  position: absolute;
+  top: 10px;
+  right: 2vw;
+}
+
+.table-button {
+  width: 8vw;
+}
+
+  .table {
+  border: 2px solid #000;
+  border-spacing: 3px;
+  border-collapse: collapse;
+  text-align: center;
+  }
+
+td, th {
+  border: solid 2px #000;
+}
+
+.delete {
+  color: #fff;
+  background-color: #ff3232;
+}
+
+.edit {
+  background-color: #f7bd51;
+}
+
+.add {
+  background-color: #85f750;
+}
+button {
+  font-size: 1.1em;
+}
+
+form {
+    padding: 25px;
+    background-color: #fdf5e3;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+form > div {
+    padding: 4px 0;
+}
+
+label {
+    display: inline-block;
+    width: 170px;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+input,select {
+    width: 150px;
+    height: 18px;
+    line-height: 18;
+    padding: 0 10px;
+    outline: 0;
+    border: 0;
+    color: white;
+    border: 1px solid #a42a2a;
+    vertical-align: middle;
+    color: #272623;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+textarea {
+    width: 150px;
+    height: 120px;
+    padding: 10px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.product-card {
+  margin: 0 15px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding: 15px 5px;
+  background-color: #fff;
+}
+
+.product-card {
+  text-align: center;
+}
+.product-card>div>p{
+  font-size: 120%;
+  font-weight: 800;
+}
+.description {
+  text-align: left;
+  margin: 20px;
+}
+.basket > p {
+  margin-top: 0;
+}
+
+.buy {
+  font-weight: 700;
+  color: white;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 8px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  border: none;
+}
+.buy:hover {
+  background: rgb(53, 167, 110);
+}
+
+.buy:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
